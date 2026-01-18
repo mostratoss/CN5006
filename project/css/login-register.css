@@ -1,0 +1,207 @@
+/* background */
+.form-bg {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+              url("../images/campus_background.jpg");
+  background-size: cover;
+  background-position: center;
+
+  animation: fadeBg 0.8s ease forwards;
+}
+
+@keyframes fadeBg {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+/*forma + popup*/
+.form-wrapper {
+  width: 90%;
+  max-width: 450px;
+  padding: 2.2rem 2.5rem;
+
+  background: rgba(255,255,255,0.9);
+  border-radius: 20px;
+
+  box-shadow: 0 12px 35px rgba(0,0,0,0.25);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  opacity: 0;
+  transform: scale(0.85);
+  animation: popup 0.45s ease forwards;
+}
+
+@keyframes popup {
+  0% { opacity: 0; transform: scale(0.75); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+
+/*logo*/
+  .form-logo {
+  display: block;
+  width: 200px;
+  margin: 0 auto 1rem auto;
+}
+
+
+/* titlos syndesh/eggrafh*/
+.form-wrapper h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #b71c1c;
+  font-family: "Lato", sans-serif;
+}
+
+
+/* labels */
+.form-wrapper label {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  display: block;
+  font-family: "Lato", sans-serif;
+}
+
+
+/* inputs (email,password klp)*/
+.form-wrapper input {
+  width: 100%;
+  padding: 0.85rem;
+  margin-bottom: 1.3rem;
+
+  border: 1px solid #ccc;
+  border-radius: 10px;
+
+  font-size: 1rem;
+  outline: none;
+
+  transition: 0.25s;
+}
+
+.form-wrapper input:focus {
+  border-color: #b71c1c;
+  box-shadow: 0 0 6px rgba(183,28,28,0.28);
+}
+
+
+/* roles (foititis/kathigits)*/
+.form-wrapper select {
+  width: 100%;
+  padding: 0.9rem;
+  margin-bottom: 1.3rem;
+
+  background: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+
+  border: 1px solid #ccc;
+  border-radius: 10px;
+
+  outline: none;
+  transition: 0.25s ease;
+}
+
+.form-wrapper select:hover {
+  border-color: #b71c1c;
+}
+
+.form-wrapper select:focus {
+  border-color: #b71c1c;
+  box-shadow: 0 0 6px rgba(183,28,28,0.28);
+}
+
+
+/* koympi ypobolis */
+.form-wrapper button {
+  width: 100%;
+  padding: 0.9rem;
+
+  background: #b71c1c;
+  color: white;
+
+  font-size: 1.15rem;
+  font-weight: 600;
+
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+  transition: 0.25s;
+}
+
+.form-wrapper button:hover {
+  background: #8e0000;
+}
+
+
+/* links kato apo th forma */
+.bottom-link {
+  text-align: center;
+  margin-top: 0.8rem;
+  font-family: "Lato", sans-serif;
+}
+
+.bottom-link a {
+  color: #b71c1c;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.bottom-link a:hover {
+  text-decoration: underline;
+}
+
+.back-home {
+  display: block;
+  margin-top: 1.5rem;
+
+  text-align: center;
+  color: #b71c1c;
+
+  font-weight: 700;
+  font-size: 1.05rem;
+  text-decoration: none;
+
+  transition: 0.25s;
+}
+
+.back-home:hover {
+  transform: translateX(-3px);
+  text-decoration: underline;
+}
+
+.msg {
+  padding: 12px;
+  margin-bottom: 15px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 600;
+  animation: fadeIn 0.4s ease;
+}
+
+.msg.success {
+  background: rgba(0, 255, 0, 0.18);
+  color: #006600;
+  border: 1px solid #009900;
+}
+
+.msg.error {
+  background: rgba(255, 0, 0, 0.18);
+  color: #990000;
+  border: 1px solid #cc0000;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

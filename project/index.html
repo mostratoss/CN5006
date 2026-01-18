@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Μητροπολιτικό Κολλέγιο</title>
+
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  
+  <!-- Footer (Social Icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+  <!-- Header -->
+<header>
+
+  <!-- LEVEL 1: TOP HEADER -->
+  <div class="top-header">
+    
+    <div class="logo-group">
+      <img src="images/logo1.png" class="logo" alt="Λογότυπο">
+    </div>
+
+<div class="header-right">
+  <a href="pages/login.php">ΣΥΝΔΕΣΗ</a>
+  <a href="pages/register.php">ΕΓΓΡΑΦΗ</a>
+</div>
+
+  </div>
+
+<!-- nav-bar -->
+<div class="nav-bar">
+
+  <!-- Nav menu -->
+  <nav id="mobileNav">
+    <a href="#">Αρχική</a>
+    <a href="#">Πανεπιστήμιο</a>
+    <a href="#">Έρευνα</a>
+    <a href="#">Υπηρεσίες</a>
+    <a href="#map-section">Επικοινωνία</a>
+  </nav>
+
+</div>
+
+
+</header>
+
+<!-- main section -->
+<!-- 1ο SECTION (Φωτο δεξιά – animation από δεξιά) -->
+<section class="scroll-section left fade-right">
+
+  <div class="text">
+    <h2>Σύγχρονες Υποδομές</h2>
+    <p>Το campus διαθέτει πλήρως εξοπλισμένα εργαστήρια πληροφορικής, αίθουσες διδασκαλίας και χώρους μελέτης.</p>
+  </div>
+
+  <img src="images/campus1.jpg" alt="">
+</section>
+
+
+<!-- 2ο SECTION (Φωτο αριστερά – animation από αριστερά) -->
+<section class="scroll-section left fade-left">
+
+  <img src="images/campus2.jpg" alt="">
+
+  <div class="text">
+    <h2>Εργαστήρια Τεχνολογίας</h2>
+    <p>Προηγμένος εξοπλισμός, σύγχρονοι υπολογιστές και εξειδικευμένα software για κάθε πρόγραμμα σπουδών.</p>
+  </div>
+
+</section>
+
+
+<!-- 3ο SECTION (Φωτο δεξιά – animation από δεξιά) -->
+<section class="scroll-section left fade-right">
+
+  <div class="text">
+    <h2>Φοιτητική Ζωή</h2>
+    <p>Μια δυναμική κοινότητα φοιτητών, events, clubs και δραστηριότητες μέσα στον χώρο του πανεπιστημίου.</p>
+  </div>
+
+  <img src="images/campus3.jpg" alt="">
+</section>
+
+<!-- MAP SECTION (Φωτο/Map αριστερά – animation από αριστερά) -->
+<section id="map-section" class="map-section fade-left">
+
+  <div class="map-left">
+    <div id="map"></div>
+  </div>
+
+  <div class="map-right">
+    <h2>Βρείτε μας στον Χάρτη</h2>
+    <p>Μπορείτε να μας εντοπίσετε στο campus μας, στο Μαρούσι. Ο χάρτης στα αριστερά δείχνει τη τοποθεσία του κολλεγίου μας.</p>
+  </div>
+
+</section>
+
+
+<!-- Back to Top Button -->
+<button id="backToTop">↑</button>
+
+  <!-- Footer -->
+<footer class="footer">
+
+  <div class="footer-content">
+
+    <div class="footer-left">
+      <img src="images/logo1.jpg" class="footer-logo" alt="Logo">
+      <p>Ιστοσελίδα Μητροπολιτικού Κολλεγίου.</p>
+      <p class="footer-social-title">Ακολουθήστε μας:</p>
+
+      <div class="footer-social">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-right">
+      <h3>Επικοινωνία</h3>
+      <p>210 2342074</p>
+      <p>info@mitropolitiko.gr</p>
+      <p>Σωρού 74, Μαρούσι, 15125</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 Μητροπολιτικό Κολλέγιο. All rights reserved.
+  </div>
+
+</footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
