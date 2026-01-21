@@ -2,6 +2,7 @@
 
 University dashboard web application developed for the course
 Web & Mobile Applications Development (CN5006).
+
 This project was developed as part of a university course
 and reflects my learning process at that time.
 
